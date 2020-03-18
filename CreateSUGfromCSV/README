@@ -1,0 +1,31 @@
+This Script create a New SUG from a .CSV file with the ArticleIDs for the follow products: "Windows 7", "Windows 8.1", "Windows 10", "Windows 10, version 1903 and later", "Windows Server 2003", "Windows Server 2008", "Windows Server 2008 R2", "Windows Server 2012", "Windows Server 2012 R2", "Windows Server 2016", "Windows Server 2019", "Office 2007", "Office 2010", "Office 2013", "Office 2016", "Office 2019"
+
+ 
+
+You need run from Configuration Manager Console Powershell You need enter the parameters
+
+
+Example:
+
+.\CreateSUGfromCSV.ps1 -SiteServer ConfigMgrSERVER01 -SiteCode 'S01' -GroupName "NEWSUG SERVER GROUP" -Products "Windows Server 2008","Windows Server 2012" -FileCSV D:\Temp\ArticleIds.csv
+
+Default the script doesnt search for ITANIUM
+
+If you need ITANIUM Updates use
+
+'-Itanium YES'
+
+Example:
+
+ .\CreateSUGfromCSV.ps1 -SiteServer ConfigMgrSERVER01 -SiteCode 'S01' -GroupName "NEWSUG SERVER ITANIUM UPs" -Products "Windows Server 2012" -Itanium YES -FileCSV D:\Temp\ArticleIdsItanium_Ups.csv
+
+ 
+
+the CSV file must have Header "ArticleID" and the numbers of Updates (just the number without 'kb')
+
+Example from CSV File:
+
+ ArticleID
+2972106
+2072106
+3097994
