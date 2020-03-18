@@ -1,5 +1,7 @@
 	This is a SAMPLE Script to Create Routes and Edit Hosts file According with a CSV file.
-	You need REVIEW THE .PS1 script File and UNCOMMENT THE 'function AddRoute' line 88 and the '$hostsfilenew' line 139 TO WORKS
+	You need REVIEW THE .PS1 script File and create a logs folder to save the log files
+	The script will add the route according with your data on csv file.
+	You can add as many routes you need and deploy from GROUP POLICY or other Automation solution.
 
 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	WARNING THIS IS A EXAMPLE FILE AND MUST BE FULLY TESTED ON LAB/HOMOLOG ENVIRONMENT BEFORE USE FOR OTHERS PURPOSES.
