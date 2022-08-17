@@ -53,7 +53,19 @@ Write-Host "This Script will help you to convert your Azure AD Group ID to SID"
 Write-Host "Just type the Azure AD Group Name or string to search and hit ENTER"
 Write-Host "                                                                Dev. SidSB"
 
+Write-Host "Checking for AzureAD module..."
 
+$azModule = Get-Module -Name "AzureAD" -ListAvailable
+
+if ($azModule -eq $null) {
+	write-host
+	write-host "AzureAD Powershell module not installed..." -f r
+	write-host "Install by running 'Install-Module AzureAD'" -f y
+	write-host "Script can't continue..." -f r
+	write-host
+	pause
+	exit
+}
 
 if (!($AzAD)) {$AzAD = Connect-AzureAD -ErrorAction SilentlyContinue}
 
