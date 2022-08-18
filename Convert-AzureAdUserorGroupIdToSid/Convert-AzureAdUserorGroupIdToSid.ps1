@@ -15,7 +15,8 @@
 .Synopsis
 Convert Azure AD Group ID to SID
 .DESCRIPTION
-This script will convert an Azure AD Group ID to SID.
+This script will Converts an Azure AD Object User or Group ID to SID.
+The script allow you to connect to your Azure Tenant and Search User or Group by Name.
 .URL
 https://github.com/sibranda/Powershell/tree/master/Convert-AzureAdUserorGroupIdToSid
 .NOTES

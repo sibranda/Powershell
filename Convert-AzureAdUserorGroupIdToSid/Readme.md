@@ -3,6 +3,8 @@ Example: to use in Intune Profile to Add Local Administrator to Local Admin Grou
 
 This Script intend to help you to convert the Object ID to SID.
 
+The script allow you to connect to your Azure Tenant and Search User or Group by Name.
+
 I Hope this can be usefull to you.
 
 Thanks
