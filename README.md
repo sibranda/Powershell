@@ -2,7 +2,7 @@
 Powershell Scripts
 
 
-This repository is used for all my public scripts.
+This repository is used for all my public PowerShell scripts.
 Let me know if you have any issues using them.
 
 Please help me to improve sending me feedback.
