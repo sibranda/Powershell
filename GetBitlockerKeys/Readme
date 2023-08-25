@@ -1,1 +1,5 @@
+GetBitlockerKeys is an C# App who will help you to Export All your Bitlocker Keys from Azure Devices.
 
+You need to create an App Reg (see README File First)
+
+Note that all the permission needed is READ ONLY.
